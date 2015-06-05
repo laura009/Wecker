@@ -1,4 +1,4 @@
-# Wetteraplikation
+# Wetterapplikation
 
 - automatische Standortbestimmung
 - aktuelles Wetter (visuell)
