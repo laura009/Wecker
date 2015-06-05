@@ -22,4 +22,3 @@
 Nicht umsetzbar:
 - Wetterkarte und -radar
 - Unwetter-Warnung
-- 
