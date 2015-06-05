@@ -8,6 +8,9 @@ $(document).ready(function(){
 
 	}).done(function(data){
 		
+		navigator.geolocation.getCurrentPosition(function(){
+			console.log(position);
+		});
 
 		var $h1	= $('h1');
 		$h1.text(data.currently.apparentTemperature+ ' °C');
