@@ -3,8 +3,9 @@ $(document).ready(function(){
 		console.log(position);
 
 		var koordinaten = {
-			longitude: 	position.coords.longitude,
-			latitude: 	position.coords.latitude
+			longitude: 	 position.coords.longitude,
+			latitude: 	 position.coords.latitude
+			//temperature: position.
 		};
 		
 		// Anzeige der Koordinaten
@@ -12,7 +13,8 @@ $(document).ready(function(){
 		//$('.latitude').text(position.coords.latitude);
 		//$('.accuracy').text(position.coords.accuracy);
 		
-		$('.apparentTemperature').text(position.currently.apparentTemperature+ ' °C');
+		// Anzeige der Temperatur
+		//$('.temperature').text(position.currently.apparentTemperature+ ' °C');
 
 
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
