@@ -27,7 +27,7 @@ $(document).ready(function(){
 			console.log(data);
 
 			// Anzeige der Temperatur
-			$('.temperature').text(data.currently.apparentTemperature+ ' °C');
+			$('.apparentTemperature').text(data.currently.apparentTemperature+ ' °C');
 		});
 
 	});
