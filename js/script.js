@@ -6,5 +6,6 @@ $(document).ready(function(){
 		$('.latitude').text(position.coords.latitude);
 		$('.accuracy').text(position.coords.accuracy);
 
+		https://api.forecast.io/forecast/APIKEY/LATITUDE,LONGITUDE
 	});
 });
