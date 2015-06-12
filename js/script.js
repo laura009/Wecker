@@ -41,6 +41,10 @@ $(document).ready(function(){
 				},
 			}).done(function(data){
 				console.log(data);
+
+				// Anzeige der Temperatur
+				$('.main').text(data.results.0.address_components.1.long_name);
+
 			});
 		});
 	});
