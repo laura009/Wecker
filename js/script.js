@@ -15,8 +15,8 @@ $(document).ready(function(){
 
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
 		$.ajax({
-			url:  'https://api.forecast.io/forecast/f5d8630e1c9fdb9adf845910a7d5e4fd/' + koordinaten.latitude + ',' + koordinaten.longitude
-			data: {
+			url:'https://api.forecast.io/forecast/f5d8630e1c9fdb9adf845910a7d5e4fd/' + koordinaten.latitude + ',' + koordinaten.longitude
+			data:{
 				units: 'si',
 				lang: 'de'
 			},
