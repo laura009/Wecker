@@ -5,7 +5,6 @@ $(document).ready(function(){
 		var koordinaten = {
 			longitude: 	 position.coords.longitude,
 			latitude: 	 position.coords.latitude
-			//temperature: position.
 		};
 		
 		// Anzeige der Koordinaten
@@ -13,10 +12,6 @@ $(document).ready(function(){
 		//$('.latitude').text(position.coords.latitude);
 		//$('.accuracy').text(position.coords.accuracy);
 		
-		// Anzeige der Temperatur
-		//$('.temperature').text(position.currently.apparentTemperature+ ' °C');
-
-
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
 		$.ajax({
 			url:'https://api.forecast.io/forecast/f5d8630e1c9fdb9adf845910a7d5e4fd/' + koordinaten.latitude + ',' + koordinaten.longitude,
@@ -30,6 +25,9 @@ $(document).ready(function(){
 			dataType: 'jsonp'
 		}).done(function(data){
 			console.log(data);
+
+			// Anzeige der Temperatur
+			$('.temperature').text(data.currently.apparentTemperature+ ' °C');
 		});
 
 	});
