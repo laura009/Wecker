@@ -43,7 +43,7 @@ $(document).ready(function(){
 				console.log(data);
 
 				// Anzeige der Temperatur
-				$('.main').text(data.results[0].address_components[1].long_name);
+				//$('.main').text(data.results[0].address_components[1].long_name);
 
 			});
 		});
