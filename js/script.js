@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
 		$.ajax({
-			url:'https://api.forecast.io/forecast/f5d8630e1c9fdb9adf845910a7d5e4fd/' + koordinaten.latitude + ',' + koordinaten.longitude
+			url:'https://api.forecast.io/forecast/f5d8630e1c9fdb9adf845910a7d5e4fd/' + koordinaten.latitude + ',' + koordinaten.longitude,
 			data:{
 				units: 'si',
 				lang: 'de'
@@ -23,7 +23,7 @@ $(document).ready(function(){
 			
 			// Damit wir mit JavaScript Daten von einem externen Webserver laden können
 			// JSONP packt Anfrage in eine Methode
-			dataType: 'jsonp',
+			dataType: 'jsonp'
 		}).done(function(data){
 			console.log(data);
 
