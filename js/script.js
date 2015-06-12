@@ -30,6 +30,8 @@ $(document).ready(function(){
 			$('.apparentTemperature').text(data.currently.apparentTemperature+ ' °C');
 
 			//Google Geocoding Anfrage
+			// mein Google API-Code: AIzaSyAcTuBQBKhiEXs3S4TZ0Pr1EzdqCSCMxig
+			// Crossrequest erlaubt
 			$.ajax({
 				url:'https://maps.googleapis.com/maps/api/geocode/json',
 				data:{
@@ -44,6 +46,4 @@ $(document).ready(function(){
 	});
 });
 
-// mein Google API-Code: AIzaSyAcTuBQBKhiEXs3S4TZ0Pr1EzdqCSCMxig
-// Crossrequest erlaubt (kein URL)
-https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8
+
