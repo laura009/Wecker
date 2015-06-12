@@ -5,3 +5,7 @@ body{
 h1 {
 	font-size: 100px;
 }
+
+.ui-header ui-bar-inherit{
+	width: 100%;
+}
