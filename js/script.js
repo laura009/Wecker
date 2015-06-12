@@ -23,7 +23,7 @@ $(document).ready(function(){
 			
 			// Damit wir mit JavaScript Daten von einem externen Webserver laden können
 			// JSONP packt Anfrage in eine Methode
-			dataType: 'jsonp'
+			dataType: 'jsonp',
 		}).done(function(data){
 			console.log(data);
 
