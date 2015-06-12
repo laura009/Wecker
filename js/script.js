@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 			// Anzeige der Temperatur
 			$('.apparentTemperature').text(data.currently.apparentTemperature+ ' °C');
-			$('.icon').text(data.currently.icon);
+			$('.summary').text(data.currently.summary);
 
 			//Google Geocoding Anfrage
 			// mein Google API-Code: AIzaSyAcTuBQBKhiEXs3S4TZ0Pr1EzdqCSCMxig
