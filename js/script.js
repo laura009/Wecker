@@ -11,6 +11,8 @@ $(document).ready(function(){
 		//$('.longitude').text(position.coords.longitude);
 		//$('.latitude').text(position.coords.latitude);
 		//$('.accuracy').text(position.coords.accuracy);
+		
+		$('.apparentTemperature').text(position.currently.apparentTemperature+ ' °C');
 
 
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
@@ -26,7 +28,6 @@ $(document).ready(function(){
 			dataType: 'jsonp'
 		}).done(function(data){
 			console.log(data);
-
 		});
 
 		var $h1	= $('h1');
