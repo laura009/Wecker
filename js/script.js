@@ -28,7 +28,21 @@ $(document).ready(function(){
 
 			// Anzeige der Temperatur
 			$('.apparentTemperature').text(data.currently.apparentTemperature+ ' °C');
+
+			//Google Geocoding Anfrage
+			$.ajax:{
+				url:'https://maps.googleapis.com/maps/api/geocode/json',
+				data:{
+					latlng: koordinaten.latitude + ',' + koordinaten.longitude,
+					key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
+					language: 'de'
+				}
+			}
 		});
 
 	});
 });
+
+// mein Google API-Code: AIzaSyAcTuBQBKhiEXs3S4TZ0Pr1EzdqCSCMxig
+// Crossrequest erlaubt (kein URL)
+https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8
