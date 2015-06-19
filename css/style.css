@@ -1,11 +1,37 @@
+*{
+	text-shadow: none;
+}
+
 body{
+	background-color: #33cccc;
 	text-align: center;
+	color: #fff;
 }
 
 h1 {
-	font-size: 100px;
+	font-size: 70px;
+	color: #33cccc;
 }
 
 .ui-header ui-bar-inherit{
 	width: 100%;
 }
+
+canvas{
+	margin: auto;
+	display: block;
+	height: 50%;
+	width: 50%;
+	min-width: 256px;
+}
+
+h4.ui-title, h4.ui-footer{
+	font-size: 12px;
+	color: #fff;
+}
+
+
+div.ui-header.ui-bar-inherit, div.ui-footer.ui-bar-inherit{
+	background-color: #000;
+}
+

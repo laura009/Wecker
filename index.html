@@ -2,9 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<!--maximum-scale = 1: verhindert das Reinzoomen-->
 
+		<!--maximum-scale = 1: verhindert das Reinzoomen-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
 		<!--Apple-->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
     	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -12,13 +13,26 @@
 		
 		<!-- Android -->		
 		<meta name="mobile-web-app-capable" content="yes">
-
+		
+		<!-- Style -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
-
 		<link rel="apple-touch-icon" href="img/wetter.png">
 		<link rel="apple-touch-icon-precomposed" href="img/wetter.png">
 
+		<!-- Favicon 
+		<link rel="icon" href="img/favicon.ico">
+		-->
+
+
+		<!-- JS -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 	
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/skycons.js"></script>
+		<script src="js/script.js"></script>
+
+		<!--Fonts -->
+		<script type="text/javascript" src="http://fast.fonts.net/jsapi/afc1dd4a-4aba-42f0-8054-7799acd47a80.js"></script>		
 
 		<title>Wetterapplikation</title>		
 	</head>
@@ -27,24 +41,27 @@
 		<div data-role="page" id="main">			
 
 			<div data-role="header">
-				<h4 class="address"></h4>
+				<h4>Wetterapplikation</h4>
 			</div>
 
 			<div role="main" class="ui-content">
 				
+				<canvas class="js-icon"></canvas>
 				<h1 class="apparentTemperature"></h1>
-				<h2 class="longitude"></h2>
-				<h2 class="latitude"></h2>
-				<h2 class="accuracy"></h2>
 				<h2 class="summary"></h2>
+				<p class="address"></p>
+				<h4 class="country"></h4>
+				<h3 class="longitude"></h3>
+				<h3 class="latitude"></h3>
+				<h3 class="accuracy"></h3>
+
 
 				<p></p>
-				<a href="#sub" data-transition="flip" class="ui-btn">Subpage</a>
+				<a href="#sub" data-transition="flip" class="ui-btn">zur Vorhersage</a>
 			</div>
 			
 			<div data-role="footer">	
-				<h4>Page Footer</h4>
-			
+				<h4>von Laura Greco</h4>		
 			</div>
 		</div>	
 
@@ -59,18 +76,13 @@
 			<div role="sup" class="ui-content">
 				
 				<h1></h1>
-				<p></p>
 				<!--<a href="#main" data-transition="flip" data-direction="reverse" class="ui-btn">Back</a>-->
 				<!-- data direction="reverse", damit es wieder zurückflipt -->
 			</div>
 			
 			<div data-role="footer">
-				<h4>Page Footer</h4>
+				<h4></h4>
 			</div>
 		</div>
-
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 	
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-		<script src="js/script.js"></script>
 	</body>
 </html>
