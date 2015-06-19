@@ -37,9 +37,9 @@ $(document).ready(function(){
 			$('.apparentTemperature').text(data.currently.apparentTemperature+ ' °C');
 
 			// Anzeige der Koordinaten
-				$('.longitude').text(position.coords.longitude);
-				$('.latitude').text(position.coords.latitude);
-				$('.accuracy').text(position.coords.accuracy);
+				// $('.longitude').text(position.coords.longitude);
+				// $('.latitude').text(position.coords.latitude);
+				// $('.accuracy').text(position.coords.accuracy);
 
 			// Google Geocoding Anfrage
 			// mein Google API-Code: AIzaSyAcTuBQBKhiEXs3S4TZ0Pr1EzdqCSCMxig

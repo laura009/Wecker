@@ -13,7 +13,8 @@ body{
 }
 
 h1 {
-	font-size: 90px;
+	font-size: 50px;
+	line-height: 0px;
 }
 
 .ui-header ui-bar-inherit{
@@ -21,10 +22,10 @@ h1 {
 }
 
 canvas{
-	margin: auto;
+	margin: 100px auto 0 auto;
 	display: block;
-	height: 70%;
-	width: 70%;
+	height: 80%;
+	width: 80%;
 	min-width: 256px;
 }
 
@@ -46,7 +47,16 @@ div.ui-content a.ui-btn{
 	margin: auto;
 }
 
-div{
-	background-color: transparent;
+
+
+div.ui-footer.ui-bar-inherit{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background-color: #33cccc;
+	color: #fff;
+	border: 0; 
 }
+
 
