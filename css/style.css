@@ -19,7 +19,7 @@ h1 {
 
 h2 {
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 40px;
 	margin-bottom: -30px
 }
 
@@ -64,6 +64,7 @@ div.ui-footer.ui-bar-inherit{
 }
 
 a.ui-btn{
+	margin-top: 50px;
 	background-color: #33cccc;
 	color: #fff;
 }
