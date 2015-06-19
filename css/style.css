@@ -8,7 +8,7 @@ body{
 	color: #fff;
 }
 
-#main{
+#main, #sub{
 	background-color: #33cccc;
 	color: #fff;
 }
@@ -20,10 +20,6 @@ h1 {
 
 h2 {
 	font-size: 30px;
-}
-
-.ui-header ui-bar-inherit{
-	width: 100%;
 }
 
 canvas{
@@ -44,16 +40,13 @@ html.ui-mobile body.ui-mobile-viewport.ui-overlay-a {
 }
 
 
-div.ui-content a.ui-btn{
-	width: 30%;
-	margin: auto;
-	background-color: #fff;
+
+div.ui-header.ui-bar-inherit{
+	position: fixed;
+	background-color: #33cccc;
+	width: 100%;
 	border: 0;
-	text-shadow: none;
-
 }
-
-
 
 div.ui-footer.ui-bar-inherit{
 	position: fixed;
@@ -65,8 +58,13 @@ div.ui-footer.ui-bar-inherit{
 	border: 0; 
 }
 
-a{
-	color: #33cccc;
+
+.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn,
+.ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left{
+	background-color: transparent;
+	text-shadow:none;
+	color: #fff;
+	width: 30%;
+	margin: auto;
+	border-color: #fff;
 }
-
-

@@ -34,26 +34,23 @@
 		<!--Fonts -->
 		<script type="text/javascript" src="http://fast.fonts.net/jsapi/afc1dd4a-4aba-42f0-8054-7799acd47a80.js"></script>		
 
-		<title>Wetterapplikation</title>		
+		<title>Wetterapp</title>		
 	</head>
 	<body>
 		<!-- Seitenansicht «Main»-->
 		<div data-role="page" id="main">			
-			<!--
+			
 			<div data-role="header"></div>
-			-->
+			
 
-			<div role="main" class="ui-content">
-				
+			<div role="main" class="ui-content">				
 				<canvas class="js-icon"></canvas>
 				<h1 class="apparentTemperature"></h1>
 				<h2 class="summary"></h2>
 				<h2 class="address"></h2>	
-
 				<a href="#sub" data-transition="flip" class="ui-btn">zur Vorhersage</a>
 			</div>
-			
-			
+					
 			<div data-role="footer">
 				<p>Wetterapplikation<br>	
 				@ by Laura Greco | MMP 13–16</p>		
@@ -62,22 +59,20 @@
 		</div>	
 
 
-		<!-- Seitenansicht Sub-->
-		<div data-role="page" id="sub">			
+		<!-- Seitenansicht «Sub»-->
+		<div data-role="page" id="sub">	
 
-			<div data-role="header" data-add-back-btn="true">
-				<h4>Sub</h4>
-			</div>
+			<div data-role="header" data-add-back-btn="true" data-back-btn-text="Zurück"></div>
 
-			<div role="sup" class="ui-content">
-				
+			<div role="sup" class="ui-content">				
 				<h1></h1>
-				<!--<a href="#main" data-transition="flip" data-direction="reverse" class="ui-btn">Back</a>-->
 				<!-- data direction="reverse", damit es wieder zurückflipt -->
+				<!--<a href="#main" data-transition="flip" data-direction="reverse" class="ui-btn">Back</a>-->	
 			</div>
 			
 			<div data-role="footer">
-				<h4></h4>
+				<p>Wetterapplikation<br>	
+				@ by Laura Greco | MMP 13–16</p>		
 			</div>
 		</div>
 	</body>
