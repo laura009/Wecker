@@ -14,19 +14,19 @@ body{
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 40px;
 	line-height: 0px;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 20px;
 }
 
 canvas{
 	margin: 100px auto 0 auto;
 	display: block;
-	height: 80%;
-	width: 80%;
+	height: 128px;
+	width: 128px;
 	min-width: 256px;
 }
 
