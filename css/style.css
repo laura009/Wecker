@@ -10,7 +10,6 @@ body{
 
 h1 {
 	font-size: 70px;
-	color: #33cccc;
 }
 
 .ui-header ui-bar-inherit{
@@ -30,8 +29,20 @@ h4.ui-title, h4.ui-footer{
 	color: #fff;
 }
 
+html.ui-mobile body.ui-mobile-viewport.ui-overlay-a {
+	background-color: #33cccc;
+}
 
 div.ui-header.ui-bar-inherit, div.ui-footer.ui-bar-inherit{
 	background-color: #000;
+}
+
+div.ui-content a.ui-btn{
+	width: 30%;
+	margin: auto;
+}
+
+div{
+	background-color: transparent;
 }
 
