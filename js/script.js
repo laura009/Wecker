@@ -30,11 +30,32 @@ $(document).ready(function(){
 			// Anzeige Icon und Summary
 			skycons.add($('.js-icon')[0], data.currently.icon);
 			skycons.play();
-
 			$('.summary').text(data.currently.summary);
+			
+			skycons.add($('.js-icon_1')[0], data.daily.data[0].icon);
+			skycons.play();
+			$('.summary_1').text(data.daily.data[0].summary);
+
+			skycons.add($('.js-icon_2')[0], data.daily.data[1].icon);
+			skycons.play();
+			$('.summary_2').text(data.daily.data[0].summary);
+
+			skycons.add($('.js-icon_3')[0], data.daily.data[2].icon);
+			skycons.play();
+			$('.summary_3').text(data.daily.data[0].summary);
+
+			skycons.add($('.js-icon_4')[0], data.daily.data[3].icon);
+			skycons.play();
+			$('.summary_4').text(data.daily.data[0].summary);
+
+			skycons.add($('.js-icon_5')[0], data.daily.data[4].icon);
+			skycons.play();
+			$('.summary_5').text(data.daily.data[0].summary);
+
+			
 
 			// Anzeige der Temperatur
-			$('.apparentTemperature').text(data.currently.apparentTemperature+ ' °C');
+			$('.temperature').text(data.currently.temperature + ' °C');
 
 			// Anzeige der Koordinaten
 				// $('.longitude').text(position.coords.longitude);

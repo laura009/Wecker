@@ -10,11 +10,6 @@ body{
 	padding-top: 20px;
 }
 
-#main, #sub{
-	background-color: #33cccc;
-	color: #fff;
-}
-
 h1 {
 	font-size: 60px;
 	line-height: 0px;
@@ -30,29 +25,15 @@ h4{
 	line-height: 15px;
 }
 
+
 p{
 	font-size: 12px;
 	line-height: 12px;
 }
 
-canvas{
-	margin: 50px auto 0 auto;
-	display: block;
-	height: 128px;
-	width: 128px;
-	min-width: 256px;
-}
-
-h4.ui-title, h4.ui-footer{
-	font-size: 12px;
-	color: #fff;
-}
-
 html.ui-mobile body.ui-mobile-viewport.ui-overlay-a {
 	background-color: #33cccc;
 }
-
-
 
 div.ui-header.ui-bar-inherit{
 	position: fixed;
@@ -71,6 +52,57 @@ div.ui-footer.ui-bar-inherit{
 	border: 0; 
 }
 
+
+hr{
+	width: 90%%;
+	border:solid #fff 1px;
+	margin: 50px auto;
+	display: block;
+}
+
+.forcast{
+	margin:50px auto; 
+	width: 90%;
+	vertical-align: middle;
+}
+
+.subcontent_tag{
+	margin: 0 5px;
+	width: 30%;
+	height: 50px;
+	float:left;
+	display: inline;
+	text-align: right;
+	line-height: 0px;
+}
+
+.subcontent_icon{
+	margin: 0 5px;
+	width: 15%;
+	height: 50px;
+	float:left;
+	display: inline;
+	text-align: center;
+	line-height: 0px;
+
+}
+.subcontent_summary{
+	margin: 0 5px;
+	width: 45%;
+	height: 50px;
+	float:left;
+	display: inline;
+	text-align: left;
+	line-height: 0px;
+}
+
+
+
+#main, #sub{
+	background-color: #33cccc;
+	color: #fff;
+}
+
 #main.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn,
 .ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left{
 	margin: auto;
@@ -81,3 +113,16 @@ div.ui-footer.ui-bar-inherit{
 	font-size: 15px;
 	text-shadow:none;
 }
+
+.js-icon{
+	margin: 80px auto 0 auto;
+	display: block;
+	height: 70%;
+	width: 70%;
+}
+
+.js-icon_1, .js-icon_2, .js-icon_3, .js-icon_4, .js-icon_5, .js-icon_6, .js-icon_7{
+	height: 50px;
+	width: 100px;
+	float: right;
+} 
