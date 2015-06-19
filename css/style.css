@@ -13,7 +13,7 @@ body{
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 100px;
 	line-height: 0px;
 }
 
@@ -47,8 +47,6 @@ div.ui-content a.ui-btn{
 	margin: auto;
 }
 
-
-
 div.ui-footer.ui-bar-inherit{
 	position: fixed;
 	bottom: 0;
@@ -57,6 +55,11 @@ div.ui-footer.ui-bar-inherit{
 	background-color: #33cccc;
 	color: #fff;
 	border: 0; 
+}
+
+a.ui-btn{
+	background-color: #33cccc;
+	color: #fff;
 }
 
 
