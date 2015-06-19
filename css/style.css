@@ -67,7 +67,7 @@ hr{
 }
 
 .subcontent_tag{
-	width: 60%;
+	width: 70%;
 	height: 50px;
 	float:left;
 	display: inline;
@@ -76,9 +76,9 @@ hr{
 }
 
 .subcontent_icon{
-	width: 40%
+	width: 30%
 	height: 50px;
-	float:left;
+	float:right;
 	display: inline;
 	text-align: right;
 	line-height: 0px;
