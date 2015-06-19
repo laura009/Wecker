@@ -62,12 +62,12 @@ hr{
 
 .forcast{
 	margin:50px auto; 
-	width: 90%;
+	width: 70%;
 	vertical-align: middle;
 }
 
 .subcontent_tag{
-	width: 40%;
+	width: 60%;
 	height: 50px;
 	float:left;
 	display: inline;
@@ -76,21 +76,15 @@ hr{
 }
 
 .subcontent_icon{
-	height: 50px;
-	float:left;
-	display: inline;
-	text-align: center;
-	line-height: 0px;
-
-}
-.subcontent_summary{
-	width: 50%;
+	width: 40%
 	height: 50px;
 	float:left;
 	display: inline;
 	text-align: right;
 	line-height: 0px;
+
 }
+
 
 
 
