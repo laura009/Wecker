@@ -1,10 +1,11 @@
 *{
-	text-shadow: none;
+	text-shadow:none;
 }
 
 body{
 	background-color: #33cccc;
 	text-align: center;
+	color: #fff;
 }
 
 #main{
@@ -46,9 +47,13 @@ html.ui-mobile body.ui-mobile-viewport.ui-overlay-a {
 div.ui-content a.ui-btn{
 	width: 30%;
 	margin: auto;
-	background-color: transparent;
-	color: #fff;
+	background-color: #fff;
+	border: 0;
+	text-shadow: none;
+
 }
+
+
 
 div.ui-footer.ui-bar-inherit{
 	position: fixed;
@@ -60,6 +65,8 @@ div.ui-footer.ui-bar-inherit{
 	border: 0; 
 }
 
-
+a{
+	color: #33cccc;
+}
 
 
