@@ -65,21 +65,19 @@ div.ui-footer.ui-bar-inherit{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 100px;
+	height: 50px;
 	background-color: #33cccc;
 	color: #fff;
 	border: 0; 
 }
 
-
-.ui-page.ui-page-theme-a.ui-page-active div.ui-footer a.ui-btn,
+#main.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn,
 .ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left{
-	margin-top: 100px;
-	background-color: transparent;
-	text-shadow:none;
-	color: #fff;
-	width: 20%;
 	margin: auto;
+	width: 20%;
+	color: #fff;
+	background-color: transparent;
 	border-color: #fff;
 	font-size: 15px;
+	text-shadow:none;
 }
