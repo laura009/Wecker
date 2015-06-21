@@ -25,7 +25,7 @@ h3{
 	line-height: 15px;
 }
 
-h3{
+h4{
 	font-size: 12px;
 	line-height: 12px;
 }
@@ -100,8 +100,6 @@ div.ui-content{
 	text-shadow:none;
 }
 
-
-
 .js-icon{
 	margin: 80px auto 0 auto;
 	display: block;
@@ -112,4 +110,5 @@ div.ui-content{
 .js-icon_1, .js-icon_2, .js-icon_3, .js-icon_4, .js-icon_5, .js-icon_6, .js-icon_7{
 	height: 50px;
 	width: 100px;
+	text-align: left;
 } 
