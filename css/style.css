@@ -108,7 +108,8 @@ div.ui-content{
 }
 
 .js-icon_1, .js-icon_2, .js-icon_3, .js-icon_4, .js-icon_5, .js-icon_6, .js-icon_7{
+	margin-top: 5px;
+	margin-left: 0px;
 	height: 50px;
 	width: 100px;
-	text-align: left;
 } 
