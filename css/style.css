@@ -70,8 +70,7 @@ div.ui-content{
 }
 
 .subcontent_icon{
-	margin-top: 5px
-	width: 30%;
+	margin-top: 5px;
 	float:left;
 	text-align: right;
 	line-height: 0px;
@@ -79,7 +78,7 @@ div.ui-content{
 }
 
 .subcontent_tag{
-	width: 60%;
+	width: 70%;
 	margin-left: 5px;
 	float:right;
 	text-align: left;
