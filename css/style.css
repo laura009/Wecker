@@ -64,9 +64,9 @@ div.ui-content{
 	margin:auto;
 	padding: 5px; 
 	width: 50%;
-	vertical-align: middle;
 	border-bottom: solid #fff 1px;
 	overflow: auto;
+	text-align: left
 }
 
 .subcontent_icon{
