@@ -6,7 +6,7 @@ $(document).ready(function(){
 		});
 
 	navigator.geolocation.getCurrentPosition(function(position){
-		console.log(position);
+		// console.log(position);
 
 		var koordinaten = {
 			longitude: 	 position.coords.longitude,
@@ -25,7 +25,7 @@ $(document).ready(function(){
 			// JSONP packt Anfrage in eine Methode
 			dataType: 'jsonp'
 		}).done(function(data){
-			console.log(data);
+			// console.log(data);
 
 			// Anzeige Icon, Temperaturen und Summary
 			skycons.add($('.js-icon')[0], data.currently.icon);
@@ -53,10 +53,10 @@ $(document).ready(function(){
 			$('.summary_5').text(data.daily.data[4].summary);
 
 
-			skycons.play();			
+			skycons.play();	
+					
+    	});
 
-			// Anzeige der Temperatur
-			
 			// Anzeige der Koordinaten
 				// $('.longitude').text(position.coords.longitude);
 				// $('.latitude').text(position.coords.latitude);
@@ -73,7 +73,7 @@ $(document).ready(function(){
 					language: 'de'
 				},
 			}).done(function(data){
-				console.log(data);
+				// console.log(data);
 
 				// Anzeige der Adresse
 				$('.address').text(data.results[0].formatted_address);
@@ -86,12 +86,9 @@ $(document).ready(function(){
 	console.log($('.js-icon')[0]);
 
 	skycons.add($('.js-icon')[0], Skycons.RAIN);
-	
-	
+		
 	setTimeout(function(){
 		skycons.set($('.js-icon')[0], Skycons.PARTLY_CLOUDY_DAY);
 		},
 		5000);
 	*/
-
-});
