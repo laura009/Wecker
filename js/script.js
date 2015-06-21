@@ -27,36 +27,36 @@ $(document).ready(function(){
 		}).done(function(data){
 			console.log(data);
 
-			// Anzeige Icon und Summary
+			// Anzeige Icon, Temperaturen und Summary
 			skycons.add($('.js-icon')[0], data.currently.icon);
-			skycons.play();
+			$('.temperature').text(data.currently.temperature + ' °C');
 			$('.summary').text(data.currently.summary);
 			
 			skycons.add($('.js-icon_1')[0], data.daily.data[0].icon);
-			skycons.play();
+			$('.temperature_1').text(data.daily.data[0].temperatureMin + ' °C / ' + data.daily.data[0].temperatureMax+ ' °C');
 			$('.summary_1').text(data.daily.data[0].summary);
 
 			skycons.add($('.js-icon_2')[0], data.daily.data[1].icon);
-			skycons.play();
-			$('.summary_2').text(data.daily.data[0].summary);
+			$('.temperature_2').text(data.daily.data[1].temperatureMin + ' °C / ' + data.daily.data[1].temperatureMax+ ' °C');
+			$('.summary_2').text(data.daily.data[1].summary);
 
 			skycons.add($('.js-icon_3')[0], data.daily.data[2].icon);
-			skycons.play();
-			$('.summary_3').text(data.daily.data[0].summary);
+			$('.temperature_3').text(data.daily.data[2].temperatureMin + ' °C / ' + data.daily.data[2].temperatureMax+ ' °C');
+			$('.summary_3').text(data.daily.data[2].summary);
 
 			skycons.add($('.js-icon_4')[0], data.daily.data[3].icon);
-			skycons.play();
-			$('.summary_4').text(data.daily.data[0].summary);
+			$('.temperature_4').text(data.daily.data[3].temperatureMin + ' °C / ' + data.daily.data[3].temperatureMax+ ' °C');
+			$('.summary_4').text(data.daily.data[3].summary);
 
 			skycons.add($('.js-icon_5')[0], data.daily.data[4].icon);
-			skycons.play();
-			$('.summary_5').text(data.daily.data[0].summary);
+			$('.temperature_5').text(data.daily.data[4].temperatureMin + ' °C / ' + data.daily.data[4].temperatureMax+ ' °C');
+			$('.summary_5').text(data.daily.data[4].summary);
 
-			
+
+			skycons.play();			
 
 			// Anzeige der Temperatur
-			$('.temperature').text(data.currently.temperature + ' °C');
-
+			
 			// Anzeige der Koordinaten
 				// $('.longitude').text(position.coords.longitude);
 				// $('.latitude').text(position.coords.latitude);

@@ -20,11 +20,15 @@ h2 {
 	line-height: 20px;
 }
 
-h4{
+h3{
 	font-size: 15px;
 	line-height: 15px;
 }
 
+h3{
+	font-size: 12px;
+	line-height: 12px;
+}
 
 p{
 	font-size: 12px;
@@ -52,42 +56,33 @@ div.ui-footer.ui-bar-inherit{
 	border: 0; 
 }
 
-
-hr{
-	width: 90%%;
-	border:solid #fff 1px;
-	margin: 50px auto;
-	display: block;
+div.ui-content{
+	margin-top: 50px;
 }
 
 .forcast{
-	margin:50px auto; 
+	margin:auto;
+	padding: 5px; 
 	width: 70%;
 	vertical-align: middle;
-	display: inline;
-}
-
-.subcontent_tag{
-	width: 70%;
-	height: 50px;
-	float:left;
-	display: inline;
-	text-align: left;
-	line-height: 0px;
+	border-bottom: solid #fff 1px;
+	overflow: auto;
 }
 
 .subcontent_icon{
 	width: 30%;
-	height: 50px;
-	float:right;
-	display: inline;
+	float:left;
 	text-align: right;
 	line-height: 0px;
 
 }
 
-
-
+.subcontent_tag{
+	width: 70%;
+	float:right;
+	text-align: left;
+	line-height: 0px;
+}
 
 #main, #sub{
 	background-color: #33cccc;
@@ -105,6 +100,8 @@ hr{
 	text-shadow:none;
 }
 
+
+
 .js-icon{
 	margin: 80px auto 0 auto;
 	display: block;
@@ -115,5 +112,4 @@ hr{
 .js-icon_1, .js-icon_2, .js-icon_3, .js-icon_4, .js-icon_5, .js-icon_6, .js-icon_7{
 	height: 50px;
 	width: 100px;
-	float: right;
 } 
