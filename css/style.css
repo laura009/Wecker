@@ -57,13 +57,13 @@ div.ui-footer.ui-bar-inherit{
 }
 
 div.ui-content{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .forcast{
 	margin:auto;
 	padding: 5px; 
-	width: 90%;
+	width: 95%;
 	border-bottom: solid #fff 1px;
 	overflow: auto;
 	text-align: left
@@ -76,7 +76,7 @@ div.ui-content{
 }
 
 .subcontent_tag{
-	width: 60%;
+	width: 50%;
 	margin-left: 5px;
 	float:right;
 	text-align: left;
