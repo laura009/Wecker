@@ -63,7 +63,7 @@ div.ui-content{
 .forcast{
 	margin:auto;
 	padding: 5px; 
-	width: 70%;
+	width: 90%;
 	border-bottom: solid #fff 1px;
 	overflow: auto;
 	text-align: left
@@ -111,5 +111,5 @@ div.ui-content{
 
 .js-icon_1, .js-icon_2, .js-icon_3, .js-icon_4, .js-icon_5, .js-icon_6, .js-icon_7{
 	height: 50px;
-	width: 100px;
+	width: 50px;
 } 
