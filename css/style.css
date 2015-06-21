@@ -79,7 +79,7 @@ div.ui-content{
 
 .subcontent_tag{
 	margin-left: 10px;
-	width: auto;
+	min-width: 200px;
 	float:right;
 	text-align: left;
 	line-height: 0px;
