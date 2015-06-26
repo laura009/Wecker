@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 
-		<!--maximum-scale = 1: verhindert das Reinzoomen-->
+		<!-- maximum-scale = 1: verhindert das Reinzoomen -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
-		<!--Apple-->
+		<!-- Apple -->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
     	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
     	<!-- content="black-translucent": ohne schwarzem Balken in Statusbar -->
@@ -20,7 +20,7 @@
 		<link rel="apple-touch-icon" href="img/wetter.png">
 		<link rel="apple-touch-icon-precomposed" href="img/wetter.png">
 
-		<!-- Favicon  -->
+		<!-- Favicon -->
 		<link rel="icon" href="img/favicon.ico">
 		
 		<!-- JS -->
@@ -47,6 +47,7 @@
 				<h2 class="summary"></h2>
 				<h3 class="address"></h3>	
 				<a href="#sub" data-transition="flip" class="ui-btn">Prognose</a>
+				<a href="#map" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-location">Map</a>
 			</div>
 					
 			<div data-role="footer">
@@ -119,6 +120,17 @@
 						<h4 class="temperature_5"></h4>
 						<h4 class="summary_5"></h4>						
 					</div>	
+				</div>
+
+				<div data-role="page" id="map">
+					<div data-role="header">
+						<a href="#main" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-back">Back</a>
+						<h1 class="address">…</h1>
+					</div><!-- /header -->
+
+					<div role="main" class="ui-content">
+						<div class="map-canvas"></div>
+					</div><!-- /content -->
 				</div>
 
 			</div>
