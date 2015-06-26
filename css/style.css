@@ -112,10 +112,10 @@ div.ui-content{
 
 .map-content,
 .map-canvas {
-	background: #fff;
+	background: #33cccc;
 	padding: 0;
 	position : absolute;
-	top : 44px;
+	top : 40px;
 	right : 0;
 	bottom : 0;
 	left : 0;
