@@ -88,9 +88,10 @@ div.ui-content{
 }
 
 #main.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn,
-.ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left,
-.ui-icon-location{
+#main.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn.ui-icon-location,
+.ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left{
 	margin: auto;
+	margin-top: 10px;
 	width: 20%;
 	color: #fff;
 	background-color: transparent;
