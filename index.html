@@ -47,7 +47,7 @@
 				<h2 class="summary"></h2>
 				<h3 class="address"></h3>	
 				<a href="#sub" data-transition="flip" class="ui-btn">Prognose</a>
-				<a href="#map" class="ui-btn ui-icon-location">Map</a>
+				<a href="#map" data-transition="flip" class="ui-btn ui-icon-location">Map</a>
 			</div>
 					
 			<div data-role="footer">
@@ -144,15 +144,10 @@
 		<!-- Seitenansicht Map-->
 		<div data-role="page" id="map">			
 			
-			<div data-role="header"></div>
+			<div data-role="header" data-add-back-btn="true" data-back-btn-text="Zurück"></div>
 			
 			<div role="main" class="ui-content">				
-				<canvas class="js-icon"></canvas>
-				<h1 class="temperature"></h1>
-				<h2 class="summary"></h2>
-				<h3 class="address"></h3>	
-				<a href="#sub" data-transition="flip" class="ui-btn">Prognose</a>
-				<a href="#map" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-location">Map</a>
+				<div class="map-canvas"></div>
 			</div>
 					
 			<div data-role="footer">
