@@ -109,13 +109,3 @@ div.ui-content{
 	width: 100px;
 	height: 50px;
 } 
-
-.map-canvas {
-	background: #33cccc;
-	padding: 0;
-	position : absolute;
-	top : 40px;
-	right : 0;
-	bottom : 0;
-	left : 0;
-}
