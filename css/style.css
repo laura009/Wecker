@@ -87,9 +87,9 @@ div.ui-content{
 	color: #fff;
 }
 
+.ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left,
 .ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn,
-.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn.ui-icon-location,
-.ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left{
+.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn.ui-icon-location{
 	margin: auto;
 	margin-top: 10px;
 	width: 20%;
