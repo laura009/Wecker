@@ -87,8 +87,8 @@ div.ui-content{
 	color: #fff;
 }
 
-#main.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn,
-#main.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn.ui-icon-location,
+.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn,
+.ui-page.ui-page-theme-a.ui-page-active div.ui-content a.ui-btn.ui-icon-location,
 .ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left{
 	margin: auto;
 	margin-top: 10px;
