@@ -39,7 +39,9 @@
 		<!-- Seitenansicht «Main»-->
 		<div data-role="page" id="main">			
 			
-			<div data-role="header"></div>
+			<div data-role="header">
+				<a href="#map" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-location">Map</a>
+			</div>
 			
 			<div role="main" class="ui-content">				
 				<canvas class="js-icon"></canvas>
@@ -61,7 +63,9 @@
 		<!-- Seitenansicht «Sub»-->
 		<div data-role="page" id="sub">	
 
-			<div data-role="header" data-add-back-btn="true" data-back-btn-text="Zurück"></div>
+			<div data-role="header" data-add-back-btn="true" data-back-btn-text="Zurück">
+				<a href="#map" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-location">Map</a>
+			</div>
 
 			<div role="sup" class="ui-content">				
 				<!-- data direction="reverse", damit es wieder zurückflipt -->
@@ -122,19 +126,25 @@
 					</div>	
 				</div>
 
-				<div data-role="page" id="map">
-					<div data-role="header">
-						<a href="#main" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-back">Back</a>
-						<h1 class="address">…</h1>
-					</div><!-- /header -->
-
-					<div role="main" class="ui-content">
-						<div class="map-canvas"></div>
-					</div><!-- /content -->
-				</div>
-
 			</div>
 			
+			<div data-role="footer">
+				<p>Wetterapplikation<br>	
+				@ by Laura Greco | MMP 13–16</p>		
+			</div>
+		</div>
+
+		<!-- Seitenansicht Map-->
+		<div data-role="page" id="map">
+			<div data-role="header">
+				<a href="#main" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-back">Back</a>
+				<h1 class="address">…</h1>
+			</div>
+
+			<div role="main" class="ui-content">
+				<div class="map-canvas"></div>
+			</div> 
+
 			<div data-role="footer">
 				<p>Wetterapplikation<br>	
 				@ by Laura Greco | MMP 13–16</p>		
