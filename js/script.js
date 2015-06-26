@@ -99,7 +99,7 @@ $(document).ready(function(){
 			map: map
 		});
 	}
-});
+//});
 	
 	/*
 	console.log($('.js-icon'));
