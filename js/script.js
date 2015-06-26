@@ -1,9 +1,9 @@
 $(document).ready(function(){	
 
 	var skycons = new Skycons({
-			color: "#fff",
-			resizeClear:true
-		});
+		color: "#fff",
+		resizeClear:true
+	});
 
 	navigator.geolocation.getCurrentPosition(function(position){
 		// console.log(position);
@@ -52,10 +52,7 @@ $(document).ready(function(){
 			$('.temperature_5').text(data.daily.data[4].temperatureMin + ' °C / ' + data.daily.data[4].temperatureMax+ ' °C');
 			$('.summary_5').text(data.daily.data[4].summary);
 
-
-			skycons.play();	
-					
-    	});
+			skycons.play();						
 
 			// Anzeige der Koordinaten
 				// $('.longitude').text(position.coords.longitude);
@@ -99,6 +96,7 @@ $(document).ready(function(){
 			map: map
 		});
 	}
+});
 	
 	/*
 	console.log($('.js-icon'));
