@@ -92,7 +92,8 @@ $(document).ready(function(){
 			zoom: 10,
 			center: latlng,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
+			};
+
 		var map = new google.maps.Map($('.map-canvas')[0], myOptions);
 
 		var marker = new google.maps.Marker({
@@ -100,8 +101,8 @@ $(document).ready(function(){
 			map: map
 		});
 	}
-});
 
+}
 
 	
 //});
