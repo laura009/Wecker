@@ -84,7 +84,7 @@ $(document).ready(function(){
 
 	$(document).on('pageshow', '#map', function() {
 			//console.log(koordinaten);
-			drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
+			drawMap(new google.maps.LatLng(latitude, longitude));
 	});
 
 	function drawMap(latlng) {
