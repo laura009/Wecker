@@ -72,7 +72,7 @@ $(document).ready(function(){
 					latlng: koordinaten.latitude + ',' + koordinaten.longitude,
 					key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
 					language: 'de'
-				},
+				}
 			}).done(function(data){
 				// console.log(data);
 
@@ -82,7 +82,7 @@ $(document).ready(function(){
 		});
 	});
 
-	$( document ).on('pageshow', '#map', function() {
+	$(document).on('pageshow', '#map', function() {
 			//console.log(koordinaten);
 			drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
@@ -92,7 +92,7 @@ $(document).ready(function(){
 			zoom: 10,
 			center: latlng,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
+		};
 
 		var map = new google.maps.Map($('.map-canvas')[0], myOptions);
 
@@ -101,6 +101,7 @@ $(document).ready(function(){
 			map: map
 		});
 	}
+});
 	
 	/*
 	console.log($('.js-icon'));
