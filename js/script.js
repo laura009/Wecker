@@ -13,6 +13,7 @@ $(document).ready(function(){
 			latitude: 	 position.coords.latitude
 		};		
 			
+		// Forcast
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
 		$.ajax({
 			url:'https://api.forecast.io/forecast/f5d8630e1c9fdb9adf845910a7d5e4fd/' + koordinaten.latitude + ',' + koordinaten.longitude,
@@ -80,6 +81,27 @@ $(document).ready(function(){
 			});
 		});
 	});
+
+	$( document ).on('pageshow', '#map', function() {
+			console.log(koordinaten);
+			drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
+	});
+
+	function drawMap(latlng) {
+		var myOptions = {
+			zoom: 10,
+			center: latlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map($('.map-canvas')[0], myOptions);
+
+		var marker = new google.maps.Marker({
+			position: latlng,
+			map: map
+		});
+	}
+});
+
 
 	
 //});
