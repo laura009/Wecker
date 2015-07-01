@@ -101,7 +101,9 @@ $(document).ready(function(){
 			map: map
 		});
 	}
-	
+});
+
+
 	/*
 	console.log($('.js-icon'));
 	console.log($('.js-icon')[0]);
