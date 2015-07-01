@@ -70,7 +70,6 @@ div.ui-content{
 }
 
 .subcontent_icon{
-	margin-top: 15px;
 	float:left;
 	width: 100px;
 }
@@ -118,7 +117,7 @@ div.ui-content{
 	background:#33cccc;
 	padding: 0;
 	position : absolute;
-	top : 40px;
+	top : 80px;
 	right : 0;
 	bottom : 0;
 	left : 0;
