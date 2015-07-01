@@ -81,24 +81,7 @@ $(document).ready(function(){
 		});
 	});
 
-	$( document ).on('pageshow', '#map', function() {
-		console.log(koordinaten);
-		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
-	});
-
-	function drawMap(latlng) {
-		var myOptions = {
-			zoom: 10,
-			center: latlng,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		var map = new google.maps.Map($('.map-canvas')[0], myOptions);
-
-		var marker = new google.maps.Marker({
-			position: latlng,
-			map: map
-		});
-	}
+	
 //});
 	
 	/*
