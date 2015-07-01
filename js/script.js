@@ -82,9 +82,13 @@ $(document).ready(function(){
 		});
 	});
 
+
 	$(document).on('pageshow', '#map', function() {
-			//console.log(koordinaten);
-			drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
+		var koordinaten = {
+			longitude: 	position.coords.longitude,
+			latitude: 	position.coords.latitude
+
+		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
 
 	function drawMap(latlng) {
