@@ -87,7 +87,8 @@ $(document).ready(function(){
 		var koordinaten = {
 			longitude: 	position.coords.longitude,
 			latitude: 	position.coords.latitude
-			console,log(koordinaten);
+		}
+		console,log(koordinaten);
 
 		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
