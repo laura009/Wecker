@@ -8,7 +8,7 @@ $(document).ready(function(){
 	navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
 
-		var koordinaten = {
+		var koordinaten; = {
 			longitude: 	position.coords.longitude,
 			latitude: 	position.coords.latitude
 		};
@@ -53,9 +53,7 @@ $(document).ready(function(){
 			$('.temperature_5').text(data.daily.data[4].temperatureMin + ' °C / ' + data.daily.data[4].temperatureMax+ ' °C');
 			$('.summary_5').text(data.daily.data[4].summary);
 
-
-			skycons.play();	
-					
+			skycons.play();						
     	});
 
 			// Anzeige der Koordinaten
@@ -81,7 +79,6 @@ $(document).ready(function(){
 			});
 		});
 	});
-
 
 	$(document).on('pageshow', '#map', function() {
 		console.log(koordinaten);
