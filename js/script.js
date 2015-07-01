@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var skycons = new Skycons({
 			color: "#fff",
 			resizeClear:true
-		});
+	});
 
 	navigator.geolocation.getCurrentPosition(function(position){
 		// console.log(position);
@@ -83,7 +83,7 @@ $(document).ready(function(){
 	});
 
 	$( document ).on('pageshow', '#map', function() {
-			console.log(koordinaten);
+			//console.log(koordinaten);
 			drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
 
@@ -101,10 +101,6 @@ $(document).ready(function(){
 			map: map
 		});
 	}
-
-
-	
-//});
 	
 	/*
 	console.log($('.js-icon'));
