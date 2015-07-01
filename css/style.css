@@ -82,7 +82,7 @@ div.ui-content{
 	text-align: left;
 }
 
-#main, #sub{
+#main, #sub, #map{
 	background-color: #33cccc;
 	color: #fff;
 }
