@@ -5,20 +5,22 @@ $(document).ready(function(){
 		resizeClear:true
 	});
 
-	var longitude;
-	var	latitude;
+
+	var koordinaten = {};
 
 
 	navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
 
-			longitude =  position.coords.longitude;
-			latitude  =  position.coords.latitude;
+		koordinaten = {
+			longitude: 	position.coords.longitude,
+			latitude: 	position.coords.latitude
+		};
 			
 		// Forcast
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
 		$.ajax({
-			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + latitude + ',' + longitude,
+			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + koordinaten.latitude + ',' + koordinaten.longitude,
 			data: {
 				units: 'si',
 				lang: 'de'
@@ -69,7 +71,7 @@ $(document).ready(function(){
 			$.ajax({
 				url: 'https://maps.googleapis.com/maps/api/geocode/json',
 				data: {
-					latlng: latitude + ',' + longitude,
+					latlng: koordinaten.latitude + ',' + koordinaten.longitude,
 					key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
 					language: 'de'
 				}
@@ -83,7 +85,8 @@ $(document).ready(function(){
 	});
 
 	$(document).on('pageshow', '#map', function() {
-		drawMap(new google.maps.LatLng(longitude, latitude));
+		console.log(koordinaten);
+		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
 
 	function drawMap(latlng) {
