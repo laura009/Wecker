@@ -5,7 +5,7 @@ $(document).ready(function(){
 		resizeClear:true
 	});
 
-	koordinaten = {
+	var koordinaten = {
 		longitude: 	,
 		latitude: 	
 	};
