@@ -5,10 +5,8 @@ $(document).ready(function(){
 		resizeClear:true
 	});
 
-	var koordinaten = {
-			longitude: null,
-			latitude: null
-	};
+	var koordinaten.longitude;
+	var koordinaten.latitude;
 
 	navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
@@ -86,7 +84,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('pageshow', '#map', function() {
-		//console.log(koordinaten);
+		console.log(koordinaten);
 		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
 
