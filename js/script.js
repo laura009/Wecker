@@ -5,8 +5,7 @@ $(document).ready(function(){
 		resizeClear:true
 	});
 
-	var koordinaten.longitude;
-	var koordinaten.latitude;
+	var koordinaten;
 
 	navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
