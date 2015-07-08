@@ -12,14 +12,14 @@ $(document).ready(function(){
 
 
 	navigator.geolocation.getCurrentPosition(function(position) {
-		console.log(position);
+		// console.log(position);
 
 		koordinaten = {
 			longitude: 	position.coords.longitude,
 			latitude: 	position.coords.latitude
 		}
 
-		console.log(koordinaten);
+		//console.log(koordinaten);
 		
 			
 		// Forcast
@@ -90,7 +90,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('pageshow', '#map', function() {
-		console.log(koordinaten);
+		//console.log(koordinaten);
 		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
 
