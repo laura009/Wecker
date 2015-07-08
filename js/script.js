@@ -18,7 +18,7 @@ $(document).ready(function(){
 		// Forcast
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
 		$.ajax({
-			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + koordinaten.latitude + ',' + koordinaten.longitude,
+			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + latitude + ',' + longitude,
 			data: {
 				units: 'si',
 				lang: 'de'
@@ -69,7 +69,7 @@ $(document).ready(function(){
 			$.ajax({
 				url: 'https://maps.googleapis.com/maps/api/geocode/json',
 				data: {
-					latlng: koordinaten.latitude + ',' + koordinaten.longitude,
+					latlng: latitude + ',' + longitude,
 					key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
 					language: 'de'
 				}
