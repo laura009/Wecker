@@ -5,21 +5,19 @@ $(document).ready(function(){
 		resizeClear:true
 	});
 
-	var longitude = 0;
-	var latitude  = 0;
-
 
 	navigator.geolocation.getCurrentPosition(function(position) {
-		// console.log(position);
+		console.log(position);
 
-		longitude = 	position.coords.longitude;
-		latitude  = 	position.coords.latitude;
-
+		var koordinaten = {
+			longitude: 	position.coords.longitude,
+			latitude: 	position.coords.latitude
+		}	
 			
 		// Forcast
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
 		$.ajax({
-			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + latitude + ',' + longitude,
+			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + koordinaten.latitude + ',' + koordinaten.longitude,
 			data: {
 				units: 'si',
 				lang: 'de'
@@ -70,7 +68,7 @@ $(document).ready(function(){
 			$.ajax({
 				url: 'https://maps.googleapis.com/maps/api/geocode/json',
 				data: {
-					latlng: latitude + ',' + longitude,
+					latlng: koordinaten.latitude + ',' + koordinaten.longitude,
 					key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
 					language: 'de'
 				}
@@ -81,29 +79,29 @@ $(document).ready(function(){
 				$('.address').text(data.results[0].formatted_address);
 			});
 		});
-	});
 
-	$(document).on('pageshow', '#map', function() {
-		console.log(longitude);
-		console.log(latitude);
-
-		drawMap(new google.maps.LatLng(latitude, longitude));
-	});
-
-	function drawMap(latlng) {
-		var myOptions = {
-			zoom: 10,
-			center: latlng,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-
-		var map = new google.maps.Map($('.map-canvas')[0], myOptions);
-
-		var marker = new google.maps.Marker({
-			position: latlng,
-			map: map
+		$(document).on('pageshow', '#map', function() {
+			console.log(koordinaten);
+			drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 		});
-	}
+
+		function drawMap(latlng) {
+			var myOptions = {
+				zoom: 10,
+				center: latlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+
+			var map = new google.maps.Map($('.map-canvas')[0], myOptions);
+
+			var marker = new google.maps.Marker({
+				position: latlng,
+				map: map
+			});
+		}
+	});
+
+	
 //});
 
 
