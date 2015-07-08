@@ -12,8 +12,8 @@ $(document).ready(function(){
 	navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
 
-			longitude: 	position.coords.longitude,
-			latitude: 	position.coords.latitude
+			longitude =  position.coords.longitude;
+			latitude  =  position.coords.latitude;
 			
 		// Forcast
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
