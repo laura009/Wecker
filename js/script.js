@@ -6,7 +6,7 @@ $(document).ready(function(){
 	});
 
 	var longitude = 0;
-	var latitude: = 0;
+	var latitude  = 0;
 
 
 	navigator.geolocation.getCurrentPosition(function(position) {
