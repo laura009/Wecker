@@ -83,8 +83,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('pageshow', '#map', function() {
-		console.log(longitude, latitude);
-		drawMap(new google.maps.LatLng(latitude, longitude));
+		drawMap(new google.maps.LatLng(longitude, latitude));
 	});
 
 	function drawMap(latlng) {
