@@ -6,12 +6,6 @@ $(document).ready(function(){
 	});
 
 
-	var koordinaten = {
-		longitude: 	0,
-		latitude: 	0
-	};
-
-
 	navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
 
@@ -88,6 +82,28 @@ $(document).ready(function(){
 	});
 
 	$(document).on('pageshow', '#map', function() {
+
+		navigator.geolocation.getCurrentPosition(function(position) {
+		// console.log(position);
+
+		koordinaten = {
+			longitude: 	position.coords.longitude,
+			latitude: 	position.coords.latitude
+		}
+			
+		// Forcast
+		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
+		$.ajax({
+			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + koordinaten.latitude + ',' + koordinaten.longitude,
+			data: {
+				units: 'si',
+				lang: 'de'
+			},
+			
+			// Damit wir mit JavaScript Daten von einem externen Webserver laden können
+			// JSONP packt Anfrage in eine Methode
+			dataType: 'jsonp'
+		
 		console.log(koordinaten);
 		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
