@@ -5,7 +5,7 @@ $(document).ready(function(){
 		resizeClear:true
 	});
 
-	var koordinaten = new position({
+	var koordinaten = new Location({
 		longitude: null	,
 		latitude:  null
 	});
