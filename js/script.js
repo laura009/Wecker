@@ -6,21 +6,19 @@ $(document).ready(function(){
 	});
 
 	var koordinaten = {
-		longitude: 	0,
-		latitude: 	0
+		longitude:0,
+		latitude:0
 	}
+	//console.log(koordinaten);
 
 
 	navigator.geolocation.getCurrentPosition(function(position) {
-		// console.log(position);
+		//console.log(position);
 
-		koordinaten = {
-			longitude: 	position.coords.longitude,
-			latitude: 	position.coords.latitude
-		}
-
-		//console.log(koordinaten);
-		
+			koordinaten.longitude = 	position.coords.longitude,
+			koordinaten.latitude  = 	position.coords.latitude
+			//console.log(koordinaten);
+	
 			
 		// Forcast
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
@@ -90,7 +88,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('pageshow', '#map', function() {
-		//console.log(koordinaten);
+		console.log(koordinaten);
 		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
 
