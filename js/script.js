@@ -5,19 +5,21 @@ $(document).ready(function(){
 		resizeClear:true
 	});
 
+	var longitude = 0;
+	var latitude: = 0;
+
 
 	navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
 
-		var koordinaten = {
-			longitude: 	position.coords.longitude,
-			latitude: 	position.coords.latitude
-		}
+		longitude = 	position.coords.longitude;
+		latitude  = 	position.coords.latitude;
+
 			
 		// Forcast
 		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
 		$.ajax({
-			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + koordinaten.latitude + ',' + koordinaten.longitude,
+			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + latitude + ',' + longitude,
 			data: {
 				units: 'si',
 				lang: 'de'
@@ -82,30 +84,10 @@ $(document).ready(function(){
 	});
 
 	$(document).on('pageshow', '#map', function() {
+		console.log(longitude);
+		console.log(latitude);
 
-		navigator.geolocation.getCurrentPosition(function(position) {
-		// console.log(position);
-
-		var koordinaten = {
-			longitude: 	position.coords.longitude,
-			latitude: 	position.coords.latitude
-		}
-			
-		// Forcast
-		// API-Key: f5d8630e1c9fdb9adf845910a7d5e4fd
-		$.ajax({
-			url: 'https://api.forecast.io/forecast/a955df0e9afe8c822ebb3adf30265fb6/' + koordinaten.latitude + ',' + koordinaten.longitude,
-			data: {
-				units: 'si',
-				lang: 'de'
-			},
-			
-			// Damit wir mit JavaScript Daten von einem externen Webserver laden können
-			// JSONP packt Anfrage in eine Methode
-			dataType: 'jsonp'
-
-		console.log(koordinaten);
-		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
+		drawMap(new google.maps.LatLng(latitude, longitude));
 	});
 
 	function drawMap(latlng) {
