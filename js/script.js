@@ -9,7 +9,7 @@ $(document).ready(function(){
 	navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
 
-		koordinaten = {
+		var koordinaten = {
 			longitude: 	position.coords.longitude,
 			latitude: 	position.coords.latitude
 		}
@@ -86,7 +86,7 @@ $(document).ready(function(){
 		navigator.geolocation.getCurrentPosition(function(position) {
 		// console.log(position);
 
-		koordinaten = {
+		var koordinaten = {
 			longitude: 	position.coords.longitude,
 			latitude: 	position.coords.latitude
 		}
@@ -103,7 +103,7 @@ $(document).ready(function(){
 			// Damit wir mit JavaScript Daten von einem externen Webserver laden können
 			// JSONP packt Anfrage in eine Methode
 			dataType: 'jsonp'
-		
+
 		console.log(koordinaten);
 		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
