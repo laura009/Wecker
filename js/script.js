@@ -6,8 +6,8 @@ $(document).ready(function(){
 	});
 
 	var koordinaten = {
-			longitude: ,
-			latitude: 
+			longitude: null,
+			latitude: null
 	};
 
 	navigator.geolocation.getCurrentPosition(function(position) {
