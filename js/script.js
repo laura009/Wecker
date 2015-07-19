@@ -8,16 +8,16 @@ $(document).ready(function(){
 	var koordinaten = {
 		longitude:0,
 		latitude:0
-	}
+	};
 	//console.log(koordinaten);
 
 
 	navigator.geolocation.getCurrentPosition(function(position) {
 		//console.log(position);
 
-			koordinaten.longitude = 	position.coords.longitude,
-			koordinaten.latitude  = 	position.coords.latitude
-			//console.log(koordinaten);
+		koordinaten.longitude = position.coords.longitude;
+		koordinaten.latitude  = position.coords.latitude;
+		//console.log(koordinaten);
 	
 			
 		// Forcast
@@ -61,29 +61,28 @@ $(document).ready(function(){
 			$('.summary_5').text(data.daily.data[4].summary);
 
 			skycons.play();						
-    	});
+    		});
 
-			// Anzeige der Koordinaten
-				// $('.longitude').text(position.coords.longitude);
-				// $('.latitude').text(position.coords.latitude);
-				// $('.accuracy').text(position.coords.accuracy);
+		// Anzeige der Koordinaten
+		// $('.longitude').text(position.coords.longitude);
+		// $('.latitude').text(position.coords.latitude);
+		// $('.accuracy').text(position.coords.accuracy);
 
-			// Google Geocoding Anfrage
-			// mein Google API-Code: AIzaSyAcTuBQBKhiEXs3S4TZ0Pr1EzdqCSCMxig
-			// Crossrequest erlaubt
-			$.ajax({
-				url: 'https://maps.googleapis.com/maps/api/geocode/json',
-				data: {
-					latlng: koordinaten.latitude + ',' + koordinaten.longitude,
-					key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
-					language: 'de'
-				}
-			}).done(function(data) {
-				// console.log(data);
+		// Google Geocoding Anfrage
+		// mein Google API-Code: AIzaSyAcTuBQBKhiEXs3S4TZ0Pr1EzdqCSCMxig
+		// Crossrequest erlaubt
+		$.ajax({
+			url: 'https://maps.googleapis.com/maps/api/geocode/json',
+			data: {
+				latlng: koordinaten.latitude + ',' + koordinaten.longitude,
+				key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
+				language: 'de'
+			}
+		}).done(function(data) {
+			// console.log(data);
 
-				// Anzeige der Adresse
-				$('.address').text(data.results[0].formatted_address);
-			});
+			// Anzeige der Adresse
+			$('.address').text(data.results[0].formatted_address);
 		});
 	});
 
@@ -107,13 +106,12 @@ $(document).ready(function(){
 		});
 	}
 
-//});
+});
 
 
 	/*
 	console.log($('.js-icon'));
 	console.log($('.js-icon')[0]);
-
 	skycons.add($('.js-icon')[0], Skycons.RAIN);
 		
 	setTimeout(function(){
